@@ -23,6 +23,9 @@
  
  */
 
+@interface ViewController : UIViewController
+
+
 /*!
  @typedef wheatherConditionsInDays
  
@@ -49,13 +52,12 @@ typedef struct {
 } wheatherConditionsInDays;
 
 
-@interface ViewController : UIViewController
+
+
+
 
 /*! @brief This property knows my name */
 @property (nonatomic,strong) NSString *myName;
-
-
-
 
 
 

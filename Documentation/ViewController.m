@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 
 /*! @brief my property */
@@ -16,7 +17,7 @@
 @end
 
 @implementation ViewController
-@synthesize myName,anotherProperty;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
