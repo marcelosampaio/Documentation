@@ -20,6 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"Initial Commit    name=%@",self.myName);
+    
+    
+    wheatherConditionsInDays wcd;
+    NSLog(@"wcd.sun = %d",wcd.sun);
 
 }
 

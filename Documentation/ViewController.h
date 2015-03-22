@@ -22,10 +22,44 @@
  @version 1.0.0
  
  */
+
+/*!
+ @typedef wheatherConditionsInDays
+ 
+ @brief A struct about the weather.
+ 
+ @discussion
+ The value of this structure represent how many sunny, cloudy, rainy and snowed days existed over the last year.
+ 
+ @field <b>sun</b> - Good weather!<br>
+ @field <b>clouds</b> - Where's the sun?<br>
+ @field <b>rain</b> - Get an umbrella!<br>
+ @field <b>snow</b> - Snowball is coming!<br>
+ 
+ */
+typedef struct {
+    /*! Good weather */
+    int sun;
+    /*!  Where's the sun? */
+    int clouds;
+    /*! Get an umbrella! */
+    int rain;
+    /*! Snowball is coming! */
+    int snow;
+} wheatherConditionsInDays;
+
+
 @interface ViewController : UIViewController
 
 /*! @brief This property knows my name */
 @property (nonatomic,strong) NSString *myName;
+
+
+
+
+
+
+
 
 
 -(float)toCelsius:(float)fromFahrenheit;
