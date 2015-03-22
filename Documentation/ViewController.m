@@ -10,12 +10,13 @@
 
 @interface ViewController ()
 
-
+/*! @brief my property */
+@property (nonatomic,strong)NSString *anotherProperty;
 
 @end
 
 @implementation ViewController
-@synthesize myName;
+@synthesize myName,anotherProperty;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
