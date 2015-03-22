@@ -11,7 +11,7 @@
 
 @interface ViewController ()
 
-/*! @brief my property */
+/*! another property */
 @property (nonatomic,strong)NSString *anotherProperty;
 
 @end
@@ -26,7 +26,11 @@
     
     wheatherConditionsInDays wcd;
     NSLog(@"wcd.sun = %d",wcd.sun);
-
+    
+    float f=[self toCelsius:12];
+    NSLog(@"%f",f);
+    
+    NSLog(@"another = %@",self.anotherProperty);
 }
 
 #pragma mark - Conversions
@@ -36,7 +40,7 @@
  @discussion This method accepts a float value representing the temperature in <b>Fahrenheit</b> scale and it converts to the <b>Celsius</b> scale. 
  
  @code
-    float f = [self toCelcius:50];
+    float f=[self toCelcius:50];
  @endcode
  
  @remark This is a super-easy method.
